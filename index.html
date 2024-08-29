@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+            <h1>Plant App</h1>
+        <nav class="menu">
+            <div class="filter">
+                <img class="icon" src="/static/noun-location-7121419.svg" alt="location">
+                <label for="select-hardiness">Hardiness</label>
+                <select id="select-hardiness">
+                <option value="">Select zone</option>
+                
+                </select>
+            </div>
+
+            <div class="filter">
+                <img class="icon" src="/static/noun-summer-calendar-6609691.svg" alt="season">
+                <label for="select-cycle">Growing cycle</label>
+                <select id="select-cycle">
+                <option value="">Select cycle</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <img class="icon" src="/static/noun-sun-923754.svg" alt="sun">
+                <label for="select-sunlight">Sunlight</label>
+                <select id="select-sunlight">
+                <option value="">Select sunlight</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <img class="icon" src="/static/noun-water-7099303.svg" alt="water">
+                <label for="select-watering">Watering</label>
+                <select id="select-watering">
+                <option value="">Select watering</option>
+                </select>
+            </div>
+        
+            <button>Find plants</button>
+        </nav>
+        <div class="message"></div>
+    </header>
+    
+    <main class="plant-list">
+    </main>
+
+    <footer class="footer">
+        <ul class="pagination">
+        <li id="previous" class="pageNumber"></li>
+        <li id="current" class="pageNumber"></li>
+        <li id = "next" class="pageNumber"></li>
+       </ul> 
+    </footer>
+    
+</body>
+</html>
